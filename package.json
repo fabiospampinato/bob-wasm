@@ -1,0 +1,33 @@
+{
+  "name": "bob-wasm",
+  "repository": "github:fabiospampinato/bob-wasm",
+  "description": "A port of Svgbob to WASM.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
+    "test": "tsex test",
+    "test:watch": "tsex --watch",
+    "update": "bash svgbob/update.sh",
+    "prepublishOnly": "npm run clean && npm run compile && npm run test"
+  },
+  "keywords": [
+    "svgbob",
+    "wasm"
+  ],
+  "dependencies": {
+    "decode-base64": "^3.0.1",
+    "once": "npm:@fabiospampinato/once@^2.0.0",
+    "uint8-encoding": "^2.0.0"
+  },
+  "devDependencies": {
+    "fava": "^0.0.6",
+    "tsex": "^1.1.1",
+    "typescript": "^4.6.3"
+  }
+}

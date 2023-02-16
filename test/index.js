@@ -9,7 +9,7 @@ import Bob from '../dist/index.js';
 
 describe ( 'Bob', it => {
 
-  it.skip ( 'works', async t => { //TODO: Update to latest version, which fixed a few issues compared to the version we are using
+  it ( 'works', async t => {
 
     await Bob.loadWASM ();
 

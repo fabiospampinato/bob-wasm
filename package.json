@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "decode-base64": "^3.0.1",
-    "once": "npm:@fabiospampinato/once@^2.0.0",
+    "function-once": "^3.0.0",
     "uint8-encoding": "^2.0.0"
   },
   "devDependencies": {

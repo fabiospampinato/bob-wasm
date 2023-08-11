@@ -3,7 +3,7 @@
 
 import BOB_BASE64 from '../svgbob/svgbob.js';
 import decode from 'decode-base64';
-import once from 'once';
+import once from 'function-once';
 import U8 from 'uint8-encoding';
 
 /* MAIN */
